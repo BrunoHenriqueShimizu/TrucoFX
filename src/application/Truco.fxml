@@ -3,16 +3,30 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <children>
-      <Label layoutX="314.0" layoutY="47.0" prefHeight="14.0" prefWidth="129.0" text="Jogar">
+      <Label layoutX="329.0" layoutY="60.0" prefHeight="14.0" prefWidth="129.0" text="Jogar">
          <font>
             <Font name="Cambria" size="57.0" />
          </font>
       </Label>
-      <Button layoutX="24.0" layoutY="439.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="52.0" prefWidth="145.0" text="Voltar para o Menu" />
+      <Button layoutX="39.0" layoutY="548.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="46.0" prefWidth="145.0" text="Voltar para o Menu" />
+      <VBox alignment="CENTER" layoutX="304.0" layoutY="230.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#jogadorUm" text="1 Jogador">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#jogadorDois" text="2 Jogadores">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
