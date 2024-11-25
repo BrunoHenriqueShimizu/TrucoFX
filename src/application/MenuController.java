@@ -135,7 +135,8 @@ public class MenuController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		
+		Card card = new Card("Paus","Dois");
+		imageView.setImage(card.getImage());
 	}
 	
 

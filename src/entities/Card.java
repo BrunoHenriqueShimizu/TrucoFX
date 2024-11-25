@@ -1,6 +1,6 @@
 package entities;
 
-
+import javafx.scene.image.Image;
 
 public class Card {
 	private final String face;
@@ -95,6 +95,12 @@ public class Card {
 
 	public String toString() {
 		return face + " de " + suit;
+	}
+	
+	public Image getImage() {
+		String pathName = "image/"+face+"_of_"+suit+".png";
+		return new Image(Card.class.getResourceAsStream(pathName));
+		
 	}
 	
 	
