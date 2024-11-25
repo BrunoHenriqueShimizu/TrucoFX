@@ -1,12 +1,15 @@
 package application;
 
 import java.io.IOException;
-
+import java.net.URL;
+import java.util.ResourceBundle;
 import entities.Bot;
+import entities.Card;
 import entities.Deck;
 import entities.Player;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -14,9 +17,12 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 import javafx.fxml.FXML;
+import javafx.scene.layout.HBox;
+
+import javafx.scene.image.ImageView;
 
 
-public class MenuController {
+public class MenuController implements Initializable {
 	
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_RED = "\u001B[31m";
@@ -32,6 +38,11 @@ public class MenuController {
 	@FXML
 	private AnchorPane scenePane;
 	
+    @FXML
+    private ImageView imageView;
+	
+    @FXML
+    private HBox imagesHBox;
 	
 	private Stage stage;
 	private Scene scene;
@@ -119,6 +130,11 @@ public class MenuController {
 	public void JogarUm(ActionEvent event) {
 		
 		
+		
+	}
+
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
 		
 	}
 	

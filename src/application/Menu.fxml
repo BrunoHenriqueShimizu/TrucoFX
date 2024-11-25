@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <children>
-      <Label layoutX="353.0" layoutY="104.0" prefHeight="53.0" prefWidth="147.0" text="Truco Online">
+      <Label layoutX="284.0" layoutY="107.0" prefHeight="53.0" prefWidth="147.0" text="Truco Online">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <VBox layoutX="333.0" layoutY="246.0" spacing="30.0">
+      <VBox layoutX="257.0" layoutY="292.0" spacing="30.0">
          <children>
             <Button mnemonicParsing="false" onAction="#switchToTruco" prefHeight="53.0" prefWidth="187.0" text="Jogar" />
             <Button mnemonicParsing="false" onAction="#switchToRegras" prefHeight="53.0" prefWidth="187.0" text="Regras do Jogo" />

@@ -1,5 +1,7 @@
 package entities;
 
+
+
 public class Card {
 	private final String face;
 	private final String suit;
@@ -10,6 +12,7 @@ public class Card {
 		this.suit = suit;
 		this.value = calculateCardValue();
 	}
+
 
 	public int calculateCardValue() { // Calcula o valor da carta pelo seu número
 		int cardValue;
@@ -93,4 +96,8 @@ public class Card {
 	public String toString() {
 		return face + " de " + suit;
 	}
+	
+	
+	
+	
 }
