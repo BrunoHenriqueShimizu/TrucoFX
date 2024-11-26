@@ -7,21 +7,21 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
    <children>
-      <HBox fx:id="imagesHBox" layoutX="247.0" layoutY="505.0" prefHeight="100.0" prefWidth="172.0">
+      <HBox fx:id="imagesHBox" layoutX="247.0" layoutY="524.0" prefHeight="100.0" prefWidth="172.0">
          <children>
             <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../Resources/images/3_of_clubs.png" />
+                  <Image url="@../assets/image/3_of_clubs.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../Resources/images/3_of_clubs.png" />
+                  <Image url="@../assets/image/3_of_clubs.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../Resources/images/3_of_clubs.png" />
+                  <Image url="@../assets/image/3_of_clubs.png" />
                </image>
             </ImageView>
          </children>

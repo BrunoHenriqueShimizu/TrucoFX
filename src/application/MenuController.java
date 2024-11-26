@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 import javafx.fxml.FXML;
 import javafx.scene.layout.HBox;
-
+import javafx.scene.layout.Pane;
 import javafx.scene.image.ImageView;
 
 
@@ -135,8 +135,22 @@ public class MenuController implements Initializable {
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		Card card = new Card("Paus","Dois");
-		imageView.setImage(card.getImage());
+		Card card = new Card("Dois","Paus");
+		System.out.println(card.getImage());
+		if (imageView == null) {
+	        System.out.println("ImageView está nulo!");
+	    } else {
+	        System.out.println("ImageView injetado com sucesso!");
+	    }
+		imageView.setImage(card.getImage());		
+		ImageView imageView = new ImageView(card.getImage());
+		
+		
+		
+		
+//		  imageView.setFitWidth(200); // Largura da imagem
+//	      imageView.setPreserveRatio(true); // Manter proporção
+//	      ((Pane) root).getChildren().add(imageView);
 	}
 	
 

@@ -1,5 +1,7 @@
 package entities;
 
+import java.io.InputStream;
+
 import javafx.scene.image.Image;
 
 public class Card {
@@ -98,7 +100,11 @@ public class Card {
 	}
 	
 	public Image getImage() {
-		String pathName = "image/"+face+"_of_"+suit+".png";
+		String pathName = "/assets/image/"+face+"_of_"+suit+".png";
+//		InputStream image = Card.class.getResourceAsStream(pathName);
+//		System.out.println(image);
+		//System.out.println(Card.class.getResource(pathName));
+		
 		return new Image(Card.class.getResourceAsStream(pathName));
 		
 	}
